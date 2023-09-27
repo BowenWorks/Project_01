@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowen - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<Body class="fade-in">
+
+      <button id="returnButton"><svg xmlns="http://www.w3.org/2000/svg" width="25" hight="30" fill="#00ADB5" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+      </svg></button>
+
+    <script>
+        // Add a click event listener to the button
+        document.getElementById('returnButton').addEventListener('click', function () {
+            // Use JavaScript's history object to navigate back to the previous page
+            window.history.back();
+        });
+    </script>
+
+<header>
+  <div class="hero-image">
+    <img src="../../image-sourse/p0.png">
+      <!-- Add your hero image here -->
+  </div>
+</header>
+
+<main>
+
+    <section class="portfolio cover">
+
+
+      <div class="project-container">
+        <div class="title">TRANSLATING THROGH DRAWING</div>
+        <div class="project-details">
+          <div class="details-left">
+            <h2>Project Details</h2>
+            <table>
+              <tr>
+                <th>Team/ Advisory</th>
+                <td class="p"> Tutor: Shin Egashira / Bowen Tan</td>
+              </tr>
+              <tr>
+                <th>Time Period</th>
+                <td class="p">Sep. 2021 - Nov. 2021</td>
+              </tr>
+              <tr>
+                <th>Media Used</th>
+                <td class="p">Hand-drawing, Physcial Model</td>
+              </tr>
+            </table>
+          </div>
+          <div class="details-right">
+            <h2>Project Description</h2>
+            <div class="toggle-text">
+                <p>The project introduces the conceptual and technical aspects of orthogonal drawings in combination with collage and object-making procedures, assuming that there is no difference between means of representation and that of design.</p>
+                <p>A development to discussions of seminal architectural writings on a systematic approach to representation, in a way to approach drawings with an understanding of intrinsic formal attributes of objects using concepts of formal addition and subtraction.</p>
+            </div>
+            <button id="toggle-button">Read More</button>
+          </div>
+        
+
+        </div>
+      </div>
+
+
+
+      <div class="portfolio-item" onclick="openImageModal(0)">
+          <img src="../../image-sourse/detail/p01.jpg" alt="Design 1">
+          <p class="caption">Project 1</p>
+      </div>
+      
+      <div class="portfolio-item">
+          <img src="../../image-sourse/detail/p02 copy.png" alt="Design 2">
+          <p class="caption">Project 2</p>
+      </div>
+      
+      <div class="portfolio-item">
+          <img src="../../image-sourse/detail/p04.png" alt="Design 3">
+          <p class="caption">Project 3</p>
+      </div>
+      
+      <div class="portfolio-item">
+          <img src="../../image-sourse/detail/p03.png" alt="Design 4">
+          <p class="caption">Project 4</p>
+      </div>
+      
+      <div class="portfolio-item">
+        <div class="image-container">
+            <img class="before-image" src="../../image-sourse/detail/p06.png" alt="Before">
+            <img class="after-image hidden" src="../../image-sourse/detail/p02.png" alt="After">
+        </div>
+        <p class="caption" style= "bottom: 600px; position: relative;">Project 5 - Image Comparison</p>
+    </div>
+     
+      <div class="portfolio-item" style="bottom: 300px; position: relative;">
+          <img src="../../image-sourse/detail/p07.jpg" alt="Design 6">
+          <p class="caption">Project 6</p>
+      </div>
+  </section>
+
+  <p>&copy; Bowen Tan</p>
+  
+</main>
+
+ <script src="./script.js"></script>
+</body>
+</html>
+
+

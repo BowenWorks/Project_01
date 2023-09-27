@@ -1,0 +1,112 @@
+.gradient-background {
+  background: linear-gradient(300deg, #ffffff, #00000045, #ffffff);
+  background-size: 180% 180%;
+  animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1{
+    color: pink;
+    display: inline-flex;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    padding: 0px;
+  }
+
+  h3{
+    font-family: 'Orbitron', sans-serif;
+  }
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.left-sidebar {
+  color: #18122B; /* Text color for the left sidebar */
+  padding: 5px;
+  width: 125px;
+  min-width: 100px; /* Adjust the width as needed */
+  transform: rotate(90deg); /* Rotate the sidebar by 90 degrees */
+  transform-origin: left bottom; /* Set the rotation origin */
+   left: 0; /* Position it at the left edge of the viewport */
+  top: 0; /* Position it at the top edge of the viewport */
+  height: 100%; /* Make it full height */
+  z-index: 2; /* Ensure it appears in the foreground */
+ 
+}
+
+.left-sidebar ul {
+  padding: 0;
+  transform: rotate(-90deg); /* Counter-rotate the list */
+  transform-origin: left bottom; /* Set the rotation origin */
+  position: absolute;
+  bottom: 10px;
+  left: 650%
+}
+
+.left-sidebar ul li {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+}
+
+.left-sidebar ul li a {
+  color: #413F42; /* Link color for the left sidebar */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.left-sidebar ul li a:hover {
+  color: pink; /* Change text color to pink on hover */
+}
+
+.small-text{
+  font-size: 6px;
+}
+
+/* CSS to hide the content initially and set up the animation */
+.fade-in {
+  opacity: 0; /* Start with 0 opacity (hidden) */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply the fadeIn animation */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+      opacity: 1; /* End with 1 opacity (fully visible) */
+  }
+}
+
+/* Optional: Add a transition to smooth the fade-in effect */
+.fade-in {
+  transition: opacity 0.9s ease-in-out; /* Optional transition for content */
+}
+
+/* CSS for the link */
+h3 a {
+  color: initial; /* Sets the initial link color, change this if needed */
+  text-decoration: none; /* Removes the underline, change this if needed */
+  transition: color 0.3s; /* Smooth transition effect for color change */
+}
+
+/* CSS for the link when hovered */
+h3 a:hover {
+  color: pink; /* Change the color to pink when hovered */
+}

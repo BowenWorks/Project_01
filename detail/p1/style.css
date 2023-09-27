@@ -1,0 +1,266 @@
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+/* Reset some default styles */
+body, h1, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body > button{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  opacity: 65%;
+}
+
+/* Define styles for the hero image */
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1; /* To place it behind the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust the size of the img element */
+.hero-image img {
+  width: 100%; /* You can change this percentage to adjust the size */
+  scale: 310%;
+  margin-top: 100px;
+  height: auto;
+  justify-content: center;
+}
+
+/* Style the main content area */
+main {
+  padding-top: 100vh; /* Make space for the fixed hero image */
+}
+
+/* Style the portfolio section */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style individual portfolio items */
+.portfolio-item {
+  flex-basis: calc(50% - 50px); /* Initially, display two columns */
+  margin: 10px;
+  text-align: center;
+}
+
+
+.portfolio-item img {
+  max-width: 87%;
+  height: auto;
+  border-radius: 0.8rem;
+  display: block; /* Add this line */
+  margin: 0 auto; /* Add this line to center the image horizontally */
+}
+
+.caption {
+  font-family: 'M PLUS 1 Code', monospace;
+  font-size: 12pt;
+  font-weight: 1000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cover{
+  background-color: rgb(242, 242, 242);
+  z-index: -1;
+  margin-top: -10%; 
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+}  
+
+p{
+  font-family: 'M PLUS 1 Code', monospace;
+  font-size: 12pt;
+  font-weight: 1000;
+  text-align: left;
+}
+
+.p{
+  font-family: 'M PLUS 1 Code', monospace;
+  font-size: 12pt;
+  font-weight: 1000;
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+
+
+/***************************************
+
+
+
+
+/* Style the project container using CSS Grid */
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile view */
+  grid-template-rows: auto auto 1fr; /* Rows for title, project details, and description */
+  gap: 20px;
+  width: 100%; /* Make it full width of the screen */
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 10px;
+}
+
+/* Style the project title */
+.title {
+  font-size: 40px;
+  text-align: RIGHT;
+  font-weight: 1000;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: #D0B47A;
+  font-family: 'Orbitron', sans-serif;
+  padding-right: 60px;
+}
+
+
+
+/* Style the project details section */
+.project-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for project details and description */
+  gap: 20px;
+}
+
+/* Media query for iPhone-sized screens */
+@media screen and (max-width: 768px) {
+  .hero-image {
+    scale: 200%;
+  }
+
+  .project-details {
+    grid-template-columns: 1fr; /* Single column for project details and description */
+    margin-left: -20%;
+    margin-right: -20%;
+  }
+
+  .portfolio-item {
+    flex-basis: calc(100% - 40px); /* Display one column for smaller screens */
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .cover {
+    margin-top: -45%;
+  }
+  
+  .title{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 1000;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    color: #053B50;
+    font-family: 'Orbitron', sans-serif;
+    margin-left: -20%;
+    margin-right: -20%;
+  }
+
+}
+
+
+/* Style the left section with project details */
+.details-left {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 1rem;
+}
+
+/* Style the right section with project description */
+.details-right {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 1rem;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px; /* description length change */
+  text-align: left;
+}
+
+div h2{
+  font-size: 25px;
+}
+
+/* Style the even rows (starting with the first row) with a gray background */
+.details-left table tr:nth-child(even) {
+  background-color:#fff;
+}
+
+/* Style the odd rows with a white background */
+.details-left table tr:nth-child(odd) {
+  background-color: rgb(242, 242, 242);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Style the large image */
+
+.large-image {
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+  margin-left: 90px;
+  width: 100%;
+}
+
+.large-image > p {
+  text-align: right;
+  margin-right: 90px;
+}
+
+.large-image img {
+  max-width: 70%; /* Ensure the image doesn't exceed the container's width */
+  max-height: 100%; /* Ensure the image doesn't exceed its original height */
+  border-radius: 0.8rem;
+}

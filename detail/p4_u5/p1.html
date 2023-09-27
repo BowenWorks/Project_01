@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowen - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<style>
+  .hero-image img {
+  margin-bottom: 180px;
+  width: 30%; /* You can change this percentage to adjust the size */
+  height: auto;
+  justify-content: center;
+}
+
+
+
+</style>
+
+
+
+<Body class="fade-in">
+
+      <button id="returnButton"><svg xmlns="http://www.w3.org/2000/svg" width="25" hight="30" fill="#00ADB5" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+      </svg></button>
+
+    <script>
+        // Add a click event listener to the button
+        document.getElementById('returnButton').addEventListener('click', function () {
+            // Use JavaScript's history object to navigate back to the previous page
+            window.history.back();
+        });
+    </script>
+
+<header>
+  <div class="hero-image">
+    <img src="./image/hero.png">
+      <!-- Add your hero image here -->
+  </div>
+</header>
+
+<main>
+
+    <section class="portfolio cover">
+
+
+      <div class="project-container">
+        <div class="title">AN EDITABLE ZONE: <var class="small-title">「Type you prompts to design here: _ _ ↵」</var> </div>
+        <div class="project-details">
+          <div class="details-left">
+            <h2>Project Details</h2>
+            <table>
+              <tr>
+                <th>Team</th>
+                <td class="p">Tutors: Ryan Dillon, David Greene / Student: Bowen Tan</td>
+              </tr>
+              <tr>
+                <th>Time Period</th>
+                <td class="p">Sep. 2022 - Jun. 2023</td>
+              </tr>
+              <tr>
+                <th>Media Used</th>
+                <td class="p">Unreal, Stable Diffusion, MidJourney, AE, FCP, Model</td>
+              </tr>
+            </table>
+          </div>
+          <div class="details-right">
+            <h2>Project Description</h2>
+            <div class="toggle-text">
+            <p>Peter Eisenman favoured commencing his architectural vocation through writing. For him, words became a site for architectural creation. Nevertheless, during that period, the resources available for transferring text into images have been limited, particularly when it comes to making changes to the details. This hindered the effective exploration of the various possibilities offered by words.</p>
+            <p>With the innovation of artificial intelligence「AI」, which can generate images from prompts. There is now a growing potential for editing design using inputs from databases.</p>
+            <p>While AutoCAD revolutionised traditional drawing techniques, it became a new tradition in itself, replaced by more modern tools like BIM and Grasshopper. As these tools continue to evolve, they will soon be challenged to be new traditions in architecture.</p>
+            <p>The project aims to explore collaboration between AI And Architects with the integration of Virtual technology 「AR, MX, VR」 to manifest a scenario of a Phygital 「Physical and Digital」City Landscape.</p>
+            </div>
+            <button id="toggle-button">Read More</button>
+          </div>
+         
+
+        </div>
+      </div>
+
+
+  <div class="video-container">
+        <div class="portfolio-item">
+          <iframe class="video" width="1510" height="600" src="https://www.youtube.com/embed/aWHl747khdU?si=YAVyhGLMDYXXcPar" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="caption">PROJECT FILM: Three 16:9 TV Screens Have Been Arranged In A Line To Simulate An Oncoming Working Condition.</p>
+        </div>
+
+        <div class="large-image">
+          <video id="project-video3" preload="metadata">
+              <source src="./clip//01.mp4" type="video/mp4">
+          </video>
+          <p class="caption1">01. Put on the MX Headset</p>
+      </div>
+
+            <div class="large-image">
+          <video id="project-video3" preload="metadata">
+              <source src="./clip/02.mp4" type="video/mp4">
+          </video>
+          <p class="caption1">02. Office scene with Headset </p>
+      </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/03.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">03. Lidar sensor to scan material world </p>
+          </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/04.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">04. Artificial Intelligence briefing four sites </p>
+          </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/08.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">05. Scanning processing</p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/09.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">06. Massive training possibilities with just four inputs to generate sections and plan</p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/10.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">07. Office Archive </p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/11.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">08. Office Archive </p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/12.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">09. Office Archive </p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/13.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">10. AI and Human colleberating factory </p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/14.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">11. Introduction to MX Glasses Headset</p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/15.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">12. Virtualisation from typing prompts to generate images</p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/16.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">13. MX headset helps Architects communicate directly with clients</p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/17.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">14. Immersive experiences in a virtual sandbox waiting to be redesigned </p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/18.mp4" type="video/mp4">
+              </video>
+              <p class="caption1">15. A future city landscape with mixed visionary and physical substance</p>
+            </div>
+  </div>
+      
+            <div class="video-container">
+                  <div class="arrow">
+                      <img src="./image/arrow.png" alt="Design 2">
+                      <p class="caption"></p>
+                  </div>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/19.mp4" type="video/mp4">
+              </video>
+              <p class="caption">PROJECT STOP-MOTION: Experiment On Transfering Daliy Object Into Site Plan As the Process To Control and Train AI.</p>
+            </div>
+
+            <div class="large-image">
+              <video id="project-video3" preload="metadata">
+                  <source src="./clip/20.mp4" type="video/mp4">
+              </video>
+              <p class="caption">PROJECT STOP-MOTION: Experiment On Transfering Daliy Object Into Site Plan As the Process To Control and Train AI.</p>
+            </div>
+
+
+
+      
+
+      </div>
+      
+      <div class="large-image">
+        <img src="./image/Artboard 1 2.png" alt="Design 6">
+        <p class="caption">CITY SCRAMBLER I: The Movement, Reflection, And Screen Transform The Role Of Architects Into The Commentariat.</p>
+        
+
+    
+      <div class="large-image">
+        <video id="project-video3" preload="metadata">
+            <source src="./clip/21.mp4" type="video/mp4">
+        </video>
+        <p class="caption">Transformation Film: Inspiration Based On Algorithm to Solve and Scrambling of Rubik's Cube to Re-edit the City.</p>
+      </div>
+      
+      <div class="large-image">
+          <img src="./image/A2_BW.png" alt="Design 4">
+          <p class="caption">CITY SCRAMBLER II's VIEWING PATTERN ANALYSIS DIAGRAM: Black Hatches represent The Screen Reflection Of The Mirror, Where Grey Harches Represent Reality.</p>
+      </div>
+      
+      <div class="large-image">
+          <img src="./image/A2_BW_02-2 2.png" alt="Design 5">
+          <p class="caption">CITY SCRAMBLER II's CONSTRUCTION MANUAL「Left」, OPERATION MANUAL 「Right」.</p>
+      </div>
+      
+
+      <div class="large-image">
+            <img src="./image/Artboard 1.png" alt="Design 6">
+            <p class="caption">CITY SCRAMBLER II: The Movement, Reflection, And Screen Transform The Role Of Architects Into The Commentariat.</p>
+
+      <div class="large-image">
+          <img src="./image/Screenshot 2023-06-20 at 09.48.25.png" alt="Design 3">
+          <p class="caption" style="text-align: left;">THE TRIAL OPERATION: Tottenham Court Road Has Been Selected As The First Editable Zone.</p>
+
+        <div class="large-image">
+        <img src="./image/Screenshot 2023-06-20 at 09.35.36.png" alt="Design 2">
+        <p class="caption" style="text-align: left;">THE CASE STUDY: MidJourney Documentation And User Instruction Specification.</p>
+       </div>
+
+      </div>
+  </section>
+</main>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+
