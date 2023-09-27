@@ -1,0 +1,197 @@
+
+.left-sidebar {
+    padding: 5px;
+    width: 125px;
+    min-width: 100px; /* Adjust the width as needed */
+    transform: rotate(90deg); /* Rotate the sidebar by 90 degrees */
+    transform-origin: left bottom; /* Set the rotation origin */
+    left: 0; /* Position it at the left edge of the viewport */
+    top: 0; /* Position it at the top edge of the viewport */
+    height: 100%; /* Make it full height */
+    z-index: 2; /* Ensure it appears in the foreground */
+  }
+
+  @media (max-width: 768px) {
+    .left-sidebar {
+      /* Remove the transform property to prevent rotation */
+      transform: none;
+      width: auto; /* Adjust the width as needed for small screens */
+    }
+  }
+
+
+div > h3 {
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    color: #B7C4CF;
+  
+}
+
+h2.card-title{
+    font-family: 'Orbitron', sans-serif;
+    color: #393E46;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+.topic-title{
+    color: #00ADB5;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    margin-bottom: 30px;    
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.links a {
+  color: #B7C4CF; /* Set the initial text color */
+  text-decoration: none; /* Remove underline from the link */
+  transition: color 0.3s; /* Add a smooth transition for the color change */
+}
+
+.links a:hover {
+  color: pink; /* Change the text color to pink on hover */
+  text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+  p{
+    font-family: 'M PLUS 1 Code', monospace;
+    font-size: 8pt;
+  }
+
+.left-sidebar ul {
+    padding: 0;
+    transform: rotate(-90deg); /* Counter-rotate the list */
+    transform-origin: left bottom; /* Set the rotation origin */
+    position: absolute;
+    bottom: 3px;
+    left: 650%
+}
+
+.left-sidebar ul li {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+}
+
+.left-sidebar ul li a {
+    color: #B7C4CF; /* Link color for the left sidebar */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.left-sidebar ul li a:hover {
+    color: pink; /* Change text color to pink on hover */
+  }
+
+.small-text{
+    font-size: 6px;
+}
+
+/* CSS to hide the content initially and set up the animation */
+.fade-in {
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Apply the fadeIn animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        opacity: 1; /* End with 1 opacity (fully visible) */
+    }
+}
+
+/* Optional: Add a transition to smooth the fade-in effect */
+.fade-in {
+    transition: opacity 0.9s ease-in-out; /* Optional transition for content */
+}
+
+  
+  .tile-image {
+    height: 90%;
+    float: left;
+    margin-right: 0px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; /* Add a smooth transition effect */
+    border-radius: 0.6rem;
+  }
+    /* Remove grayscale filter on hover to make the image colorful */
+    .tile-image:hover {
+        filter: grayscale(0%);
+  }
+
+  .card {
+    width: 50%;
+    margin-bottom: px;
+    padding: 20px;
+    text-decoration: none;
+       
+ }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+
+  @media (max-width: 680px) {
+    .logo {
+      width: 100px;
+    }
+  
+    .card {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+  
+    .card img {
+      margin-bottom: 10px;
+      width: 100%;
+      display: inline;
+      object-fit: cover;
+    }
+  }
+
+  .gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.card-container .card {
+    border: none; /* This will remove the border from card elements within the .card-container */
+}
+
+/* Default styles for the card-title */
+.card-title {
+  color: black; /* or your default text color */
+  transition: color 0.3s; /* Add a smooth transition effect for color change */
+  
+}
+
+
+
+  
+
